@@ -1,4 +1,4 @@
-using Zygote, Plots, DelimitedFiles, Dierckx, TOML
+using Zygote, Plots, DelimitedFiles, Dierckx, TOML, LaTeXStrings
 
 const N    = 65      # Total number of layers.
 const NPBL = 8       # Total number of layers in the PBL.

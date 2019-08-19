@@ -1,5 +1,18 @@
+
+
 module HarmonieVerticalLevels
 
-greet() = print("Hello World!")
+using Zygote, Plots, DelimitedFiles, Dierckx, TOML, LaTeXStrings
 
-end # module
+
+export h, m
+
+include("stretchingfunction.jl")
+include("hydricityfunction.jl")
+
+A(x) = π₀₀ * (m(x) - h(m(x)))   # Bénard equation  14
+B(x) = h(m(x))                  # Bénard equation  15
+
+
+
+end
